@@ -1,0 +1,132 @@
+*{
+    background-color: #fefdfa;
+}
+
+body{
+    font-family:  "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 1rem;
+    color: #353535;
+    
+}
+
+a{
+    color: #353535;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+p{
+    max-width: 50rem;
+}
+
+
+
+/* //////////MAIN NAVIGATION////////// */
+
+.main-nav{
+    text-align: left;
+}
+
+.main-nav a{
+    text-decoration: none;
+    
+}
+.nav-tier-one, .nav-tier-two{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.nav-tier-two{
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 1px;
+}
+
+.nav-tier-one a{
+    padding: .3rem 1rem .3rem 1rem;
+    margin-right: 3rem;
+    font-size: 1.2rem;
+}
+
+.nav-tier-one a:hover{
+    background-color: #353535;
+    color: white;
+    border: none;
+    padding: .3rem 1rem .3rem 1rem;
+    border-radius:5px;
+    cursor: pointer;
+    margin-right: 3rem;
+    transition-duration: .3s;
+}
+
+.nav-tier-two a{
+    display: inline-block;
+    margin-right: 2rem;
+    padding:.1rem;
+    position: relative;
+}
+.nav-tier-two a:after{
+    content: '';
+    height: 1.5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    background: #353535;
+    transition: 0.3s;
+}
+
+.nav-tier-two a:hover:after{
+    width: 100%;
+}
+
+#selected-page{
+    background-color: #353535;
+    color: white;
+    border: none;
+    padding: .3rem 1rem .3rem 1rem;
+    border-radius: 9px;
+    cursor: pointer;
+    margin-right: 3rem;
+}
+
+/* ///////////////////// */
+
+.elements{
+    padding-top:2rem;
+}
+
+.button{
+    background-color: #353535;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    border-radius:5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button2{
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: #353535;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-top: .5rem;
+    border-bottom-style: solid;
+    border-width: 1px;
+}
+
+.button2:hover{
+    transform: translate(0, -0.3rem);
+    transition: 0.3s;
+}
