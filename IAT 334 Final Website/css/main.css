@@ -16,8 +16,15 @@ a{
 }
 
 h1{
-    font-weight: 700;
-    font-size: 2rem;
+    font-weight: 600;
+    font-size: 3rem;
+    margin: .5rem;
+}
+
+h2{
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin: .5rem;
 }
 
 p{
@@ -57,7 +64,7 @@ p{
     color: white;
     border: none;
     padding: .3rem 1rem .3rem 1rem;
-    border-radius:5px;
+    border-radius:9px;
     cursor: pointer;
     margin-right: 3rem;
     transition-duration: .3s;
@@ -94,7 +101,15 @@ p{
     margin-right: 3rem;
 }
 
-/* ///////////////////// */
+/* /////////////////////////////////////// */
+/* //////////////TYPE///////////////////// */
+
+.type p, .type h1{
+    text-align: center;
+}
+
+
+/* ////////////////////////////////////////// */
 
 .elements{
     padding-top:2rem;
@@ -130,3 +145,38 @@ p{
     transform: translate(0, -0.3rem);
     transition: 0.3s;
 }
+
+
+/* ////////////////////////////////////////////////////// */
+
+.type p, h1, h2 {
+	-webkit-animation: slide-top 0.5s ease-in both;
+    animation: slide-top 0.5s ease-in both;
+    
+}
+
+@-webkit-keyframes slide-top{
+    0% {
+      -webkit-transform: translateY(100px);
+              transform: translateY(100px);
+              opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+              opacity: 100;
+    }
+  }
+
+  @keyframes slide-top{
+    0% {
+      -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+            opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+            opacity: 100;
+    }
+  }
